@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+    
+}
+:root{
+    --primary-green: #143b40;
+    --white-color: #fff;
+    --light-green: #6ae6b5;
+    --dark-font-color: #082326;
+    --font-color-green: #3D6266;
+
+
+}
+
+header{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(images/kitchen1.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.video-container{
+    max-width: 100%;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+
+}
+video{
+    display: block;
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.nav-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+@media (max-width: 680px){
+    
+    .video-container{
+        max-width: 100%;
+        height: 100vh;
+        background: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+    
+    }
+    .logo{
+        width: 4rem;
+        height: 4rem;
+        background: var(--primary-green);
+        text-decoration: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .logo p{
+        font-size: 3rem;
+        color: var(--white-color);
+    }  
+    .nav-btn{
+        width: 2.5rem;
+        height: 2.5rem;
+        background: var(--white-color);
+        border-radius: 15px;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer; 
+    }  
+    .menu-btn{
+        font-size: 1.1rem;
+        color: var(--primary-green);
+    }
+}
