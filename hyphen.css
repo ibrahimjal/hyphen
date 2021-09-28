@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: roboto, sans-serif;
     scroll-behavior: smooth;
+    
+}
+a{
+    text-decoration: none;
 }
 :root{
     --primary-green: #143b40;
@@ -27,16 +31,17 @@
 }
 .logo{
     position: fixed;
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
     background: var(--brown-color);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--white-color);
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
     z-index: 1;
+    transition: .3s;
 }
 .menu-btn{
     position: fixed;
@@ -52,12 +57,7 @@
 .bx-category:hover{
     color: var(--light-green);
 }
-#autopilot{
-    width: 100%;
-    height: 100vh; 
-    background: var(--light-green);
 
-}
 .nav-menu{
     width: 100%;
     height: 100vh;
@@ -143,10 +143,83 @@
     color: var(--light-green);
 }
 
+/* autopilot section */
+#autopilot{
+    width: 100%;
+    height: 85vh; 
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-autopilot{
+    flex-basis: 50%;
+    background: #55bd94;
+    position: relative;
+}
+
+.img-container{
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 0 0 0 15px;
+}
+.right-autopilot{
+    flex-basis: 50%;
+    position: relative;
+}
+.txt-box{
+    max-width: 350px;
+    margin: 20%;
+}
+.txt-box h1{
+    font-size: 3rem;
+    color: var(--dark-font-color);
+    padding-bottom: 1.5rem;
+}
+.txt-box p{
+    font-size: 1rem;
+    color: var(--font-color-green);
+    line-height: 1.5rem;
+}
+.right-autopilot .btn{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 350px;
+    height: 98px;
+    background: var(--light-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    color: var(--dark-font-color);
+    font-size: 1rem;
+    border-radius: 0 25px 0 0;
+}
+.right-autopilot .btn:hover{
+    background: #55bc93;
+}
+.right-autopilot .btn .fas{
+    color: var(--dark-font-color);
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+
 
 
 
 @media only screen and (max-width: 800px){
+    .logo{
+        width: 4rem;
+        height: 4rem;    
+    }
     .nav-links{
         width: 80vw;
         height: 75vh;
@@ -177,6 +250,57 @@
         justify-content: space-between;
     }
     
+    /* autopilot section */
+    #autopilot{
+        width: 100%;
+        height: 85vh; 
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .left-autopilot{
+        display: none;
+    }
 
+    .right-autopilot{
+        flex-basis: 100%;
+
+    }
+    .txt-box{
+        max-width: 350px;
+        margin: 25% 15%;
+    }
+    .txt-box h1{
+        font-size: 3rem;
+        color: var(--dark-font-color);
+        padding-bottom: 1.5rem;
+    }
+    .txt-box p{
+        font-size: 1rem;
+        color: var(--font-color-green);
+        line-height: 1.5rem;
+    }
+    .right-autopilot .btn{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 350px;
+        height: 98px;
+        background: var(--light-green);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        color: var(--dark-font-color);
+        font-size: 1.2rem;
+        border-radius: 0 25px 0 0;
+    }
+    .right-autopilot .btn:hover{
+        background: #55bc93;
+    }
+    .right-autopilot .btn .fas{
+        color: var(--dark-font-color);
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
 }
 
