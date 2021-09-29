@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: roboto, sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
     
 }
 a{
@@ -47,6 +48,7 @@ a{
     position: fixed;
     top: 2%;
     right: 2%;
+    z-index: 1000;
 }
 .bx-category{
     font-size: 2rem;
@@ -65,7 +67,7 @@ a{
     top: 0;
     left: -100%;
     background: var(--dark-font-color);
-    z-index: 10;
+    z-index: 10001;
     transition: all .3s;
     
 }
@@ -95,12 +97,17 @@ a{
 .close-btn:hover{
     background: var(--primary-green);
 }
-
+.list-one{
+    width: 400px;
+}
+.list-two{
+    width: 400px;
+}
 .nav-links{
     width: 80vw;
-    height: 75vh;
+    min-height: 75vh;
     margin: 2% 7%;
-    padding:  5%;
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -165,7 +172,7 @@ a{
 }
 .img-container img{
     width: 100%;
-    height: 100%;
+    height: 99%;
     aspect-ratio: 16/9;
     border-radius: 0 0 0 15px;
 }
@@ -192,7 +199,7 @@ a{
     left: 0;
     bottom: 0;
     width: 350px;
-    height: 98px;
+    height: 105px;
     background: var(--light-green);
     display: flex;
     align-items: center;
@@ -211,11 +218,135 @@ a{
     padding-left: 1rem;
 }
 
+/* Statistics section */
+#statistics{
+    width: 100vw;
+    height: 150vh;
+    background: var(--dark-font-color);
+    padding: 10% 8% 5% 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stats{
+    width: 100%;
+    margin-bottom: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#statistics img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.data h1{
+    font-size: 5rem;
+    color: var(--white-color);
+    padding-bottom: 30px;
+}
+.data p{
+    font-size: 1.2rem;
+    color: var(--light-green);
+}
+/* design section */
+#design{
+    width: 100vw;
+    height: 55vh;
+    background: var(--dark-font-color);
+    padding: 5% 8%;
+}
+#design h3{
+    font-size: 1rem;
+    color: var(--light-green);
+}
+.line{
+    height: 2px;
+    width: 1rem;
+    background: var(--light-green);
+}
+.design-txt{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.txt-left{
+    min-width: 300px;
+    margin-right: 150px;
+}
+.txt-left h1{
+    font-size: 3.5rem;
+    color: var(--white-color);
+}
+.txt-right{
+    max-width: 300px;
+    
+}
+.txt-p{
+    font-size: 1.4rem;
+    color: var(--white-color);
+    line-height: 1.rem;
+}
+
+
+/* sellingPoints section */
+.sellingPoints{
+    width: 100vw;
+    height: auto;
+    background: var(--light-green);
+    display: flex;
+    justify-content: center;
+    padding-left: 8%;
+    padding-top: 50px;
+    
+}
+.left-point{
+    background: var(--white-color);
+}
+.left-point-txt{
+    padding: 25%;
+}
+.left-point-txt h2{
+    font-size: 3rem;
+    color: var(--dark-font-color);
+    margin-bottom: 20px;
+}
+.left-point-txt p{
+    font-size: 1.1rem;
+    color: var(--font-color-green);
+    line-height: 1.5rem;
+}
+
+.points-img{
+    max-width: 50vw;
+}
+.sellingPoints2{
+    width: 100vw;
+    height: auto;
+    background: var(--light-green);
+    display: flex;
+    justify-content: center;
+    padding-right: 8%;
+    padding-top: 50px;
+    
+}
+
+
+
+
 
 
 
 
 @media only screen and (max-width: 800px){
+    
     .logo{
         width: 4rem;
         height: 4rem;    
@@ -302,5 +433,83 @@ a{
         font-size: 2rem;
         padding-left: 1rem;
     }
+
+    /* Statistics section */
+    #statistics{
+        width: 100vw;
+        height: auto;
+        
+    }
+   
+    #statistics img{
+        max-width: 100%;
+        border-radius: 20px;
+    }
+    .data{
+        width: 100%;
+        margin-bottom: 50px;
+        
+    }
+    .data h1{
+        font-size: 5rem;
+        color: var(--white-color);
+        padding-bottom: 30px;
+    }
+    .data p{
+        font-size: 1.2rem;
+        color: var(--light-green);
+    }
+
+    /* design section */
+   
+   
+    .line{
+        margin-top: 5px;
+    }
+    
+    .txt-left{
+        min-width: 300px;
+    }
+    .txt-left h1{
+        font-size: 2.5rem;
+        padding-bottom: 50px;
+    }
+    .txt-right{
+        max-width: 400px;
+        
+    }
+    .txt-p{
+        font-size: 1.2rem;
+        
+    }
+    /* sellingPoints section */
+    .sellingPoints{
+        flex-wrap: wrap-reverse;
+        padding: 5%;
+    }
+    .sellingPoints2{
+        flex-wrap: wrap-reverse;
+        padding: 5%;
+    }
+    
+    .left-point{
+        background: var(--white-color);
+
+    }
+    .left-point-txt{
+        padding: 15%;
+    }
+    .left-point-txt h2{
+        font-size: 2.5rem;
+    }
+     
+    .points-img{
+        max-width: 90vw;
+        margin: 0 auto;
+        border-radius: 20px 20px 0 0;
+
+    }
+
+    
 }
 
