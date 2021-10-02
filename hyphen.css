@@ -491,76 +491,39 @@ input{
     border: 1px solid var(--light-green);
 }
 
+/* Footer section */
+
 footer{
     width: 100vw;
-    height: 65vh;
+    height: 15vh;
     background: var(--dark-font-color);
-    padding: 5% 15%;
+    padding: 2% 15%;
     display: flex;
+    /* flex-wrap: wrap; */
     align-items: center;
-}
-.footer-left{
-    max-width: 150px;
-    margin-right: 200px;
-    
-}
-.footer-right{
-    min-width: 400px;
-}
-
-footer .list-one{
-    min-width: 200px;
-}
-footer .list-two{
-    width: 200px;
-}
-footer .nav-links{
-    width: 40vw;
-    min-height: 40vh;
-    /* margin: 2% 10%; */
-    /* padding:  5%; */
-    display: flex;
     justify-content: space-between;
 }
-footer .nav-links ul li{
-    list-style: none;
-    padding-bottom: 80px;
-}
-footer .nav-links ul li a{
-    text-decoration: none;
-    color: var(--white-color);
-    font-size: 1.5rem;
-    font-weight: normal;
-}
-footer .nav-links ul li a:hover{
-    color: var(--light-green);
-}
-footer .nav-links span{
-    font-size: 1rem;
-    margin-right: 50px;
-}
-
-/* footer .nav-social-links{
-    position: absolute;
-    right: 3%;
-    top: 32%;
-    width: 2rem;
-    height: 17rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-footer .nav-social-links a{
-    text-decoration: none;
-}
-footer .nav-social-links .fab{
-    font-size: 1.5rem;
+footer h1{
+    font-size: 2rem;
     color: var(--white-color);
 }
-footer .nav-social-links .fab:hover{
+
+.footer-social-links a{
+    color: var(--white-color);
+    padding-left: 30px;
+    transition: .3s;
+}
+.footer-social-links a:hover{
     color: var(--light-green);
-} */
+}
+footer .fab{
+    font-size: 1.2rem;
+}
+footer a{
+    color: var(--white-color);
+}
+
+
 
 
 
@@ -866,7 +829,39 @@ input{
     align-items: center;
     justify-content: center;
 }
+/* footer section */
+ 
+footer{
+    width: 100vw;
+    height: 15vh;
+    background: var(--dark-font-color);
+    padding: 2% 5%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+}
+footer a{
+    color: var(--white-color);
+}
+footer h1{
+    font-size: 1rem;
+    color: var(--white-color);
+}
 
-    
+.footer-social-links a{
+    color: var(--white-color);
+    padding-left: 10px;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.footer-social-links a:hover{
+    color: var(--light-green);
+}
+footer .fab{
+    font-size: 1.2rem;
+}
 }
 
